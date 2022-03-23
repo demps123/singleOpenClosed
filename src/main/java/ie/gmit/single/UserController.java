@@ -11,7 +11,7 @@ public class UserController extends Validate {
     //Handles incoming JSON requests that work on User resource/entity
 
         //Store used by controller
-        private Store store = new Store();
+        private Store store1 = new Store();
 
         //Create a new user
         public String createUser(String userJson) throws IOException {
@@ -25,8 +25,7 @@ public class UserController extends Validate {
                 return "ERROR";
             }
 
-            store.store(user);
-
+            store1.storeUser(user);
             return "SUCCESS";
         }
  }
