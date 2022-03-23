@@ -8,6 +8,10 @@ public class Store {
 
     private static final Map<String, User> STORAGE = new HashMap<>();
 
+    public void storeUser(User user) {
+        store(user);
+    }
+
     public void store(User user) {
         synchronized(STORAGE) {
             STORAGE.put(user.getName(), user);
