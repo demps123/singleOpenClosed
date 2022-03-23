@@ -29,6 +29,5 @@ public class UserController extends Validate {
 
             return "SUCCESS";
         }
-
  }
 
